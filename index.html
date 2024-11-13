@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café Amores</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
   </style>
 </head>
 <body>
@@ -12,9 +13,16 @@
   <div id="IntroDiv"><h3 id="Intro">¡Bienvenido! En esta cafetería podrás encontrar todas las diferentes tostadas que ha seleccionado nuestra maravillosa chef, Sofía Molina Amores. Para más información acerca de los nombres y del contexto de cada una, ponte en contacto con nosotros :)</h3></div>
   <div id="IntroDiv"><h3 id="Intro">Todos los diseños están hechos con la ayuda de nuestro talentoso diseñador, Sergio Lozano Melgar, y su equipo de diseñadores (él mismo).</h3></div>
   <div id="IntroDiv"><h3 id="Intro">¡Disfruta de la estancia!</h3> </div>
+  <div style="display: flex; justify-content: space-around; background-color: rgb(69, 99, 99); border-radius: 10px; padding: 10px; margin-left: 20%; margin-right: 20%;">
+    <div class="menu-category" onclick="showCategory('Clásicas')">Clásicas</div>
+    <div class="menu-category" onclick="showCategory('Especiales')">Especiales</div>
+    <div class="menu-category" onclick="showCategory('Olvidadas')">Olvidadas</div>
+  </div>
   <br>
   <div id="Carta" class="container">
-    <details>
+    <h2 id="category-title"></h2>
+    <div id="category-content" class="category-content"></div>
+    <!-- <details>
       <summary>Clásicas</summary>
       <ul>
         <li>La clásica</li>
@@ -27,7 +35,7 @@
       </ul>
     </details>
     <details>
-      <summary>Especiales</summary>
+      <summary><i>Especiales</i></summary> 
       <ul>
         <li>La 2008</li>
         <li>La 1973</li>
@@ -44,7 +52,7 @@
         <li>La bombastic</li>
         <li>La científica loca</li>
       </ul>
-    </details>
+    </details> -->
   </div>
   <footer>
     <p>2024 Café Amores. Todos los derechos reservados.</p>
