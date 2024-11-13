@@ -1,38 +1,38 @@
 @font-face {
-    src: url(fonts/lets-bake-muffins-personal/LetsBakeMuffins.ttf);
-    font-family: LetsBakeMuffins;
+  src: url(fonts/lets-bake-muffins-personal/LetsBakeMuffins.ttf);
+  font-family: LetsBakeMuffins;
 }
 
 @font-face {
-    src: url(fonts/rows-of-sunflowers-personal/Rows\ of\ Sunflowers.ttf);
-    font-family: RowsOfSunflowers;
+  src: url(fonts/rows-of-sunflowers-personal/Rows\ of\ Sunflowers.ttf);
+  font-family: RowsOfSunflowers;
 }
 
 body {
-    font-size: 100%;
-    background-color: rgb(231, 252, 252);
-    margin: 0px;
+  font-size: 100%;
+  background-color: rgb(231, 252, 252);
+  margin: 0px;
 }
 
 #Titulo {
-    font-family: RowsOfSunflowers;
-    font-size: 5em;
-    text-align: center;
+  font-family: RowsOfSunflowers;
+  font-size: 5em;
+  text-align: center;
 }
 
 #IntroDiv {
-    background-color: cadetblue; 
-    border-radius: 15px;
-    margin: 0.5em;
+  background-color: cadetblue;
+  border-radius: 15px;
+  margin: 0.5em;
 }
 
 #Intro {
-    font-family: LetsBakeMuffins;
-    font-size: 2.5em;
-    text-align: center;
-    color: rgb(33, 33, 33);
-    margin: 0px;
-    margin-bottom: 1%;
+  font-family: LetsBakeMuffins;
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(33, 33, 33);
+  margin: 0px;
+  margin-bottom: 1%;
 }
 
 .menu-category {
@@ -68,7 +68,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  max-width: 130px;
+  max-width: 350px;
 }
 
 /* #Carta {
@@ -102,16 +102,16 @@ details {
 } */
 
 footer {
-    background-color: rgb(11, 16, 17);
-    color: white;
-    text-align: center;
-    border-radius: 15px 15px 0px 0px;
+  background-color: rgb(11, 16, 17);
+  color: white;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
 }
 
 footer p {
-    margin: 0px;
-    margin-top: 0.2em;
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
-    font-family: RowsOfSunflowers;
+  margin: 0px;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-family: RowsOfSunflowers;
 }

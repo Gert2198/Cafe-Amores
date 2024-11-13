@@ -2,12 +2,12 @@ const menuData = {
   Clásicas: [
     {
       name: "La clásica",
-      img: "images/Jamon y tomate grande.png",
+      img: "images/Jamon y tomate.png",
       ingredients: ["Tomate", "Jamón serrano", "Aceite", "Sal"],
     },
     {
       name: "Un rapidín",
-      img: "",
+      img: "images/Jamon y tomate.png",
       ingredients: ["Ingrediente 1", "Ingrediente 2"],
     },
     {
