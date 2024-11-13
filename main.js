@@ -2,17 +2,17 @@ const menuData = {
   Clásicas: [
     {
       name: "La clásica",
-      img: "ruta/a/la_clasica.jpg",
-      ingredients: ["Ingrediente 1", "Ingrediente 2", "Ingrediente 3"],
+      img: "images/Jamon y tomate grande.png",
+      ingredients: ["Tomate", "Jamón serrano", "Aceite", "Sal"],
     },
     {
       name: "Un rapidín",
-      img: "ruta/a/un_rapidin.jpg",
+      img: "",
       ingredients: ["Ingrediente 1", "Ingrediente 2"],
     },
     {
       name: "Hoy me siento pepino",
-      img: "ruta/a/hoy_me_siento_pepino.jpg",
+      img: "",
       ingredients: [
         "Ingrediente 1",
         "Ingrediente 2",
@@ -60,13 +60,25 @@ const menuData = {
   ],
 };
 
+let lastCategory = "";
+let isShown = false;
+
 function showCategory(category) {
   const cartaDiv = document.getElementById("Carta");
+  
+  if (lastCategory === category && isShown) {
+    console.log("Entro aqui");
+    cartaDiv.style.display = "none"; 
+    isShown = false;
+    return;
+  }
+
   const title = document.getElementById("category-title");
   const contentDiv = document.getElementById("category-content");
 
   title.textContent = category;
   contentDiv.innerHTML = "";
+  
 
   menuData[category].forEach((item) => {
     const tostadaDiv = document.createElement("div");
@@ -88,4 +100,7 @@ function showCategory(category) {
   });
 
   cartaDiv.style.display = "block";
+
+  lastCategory = category;
+  isShown = true;
 }
