@@ -7,17 +7,19 @@ const menuData = {
     },
     {
       name: "Un rapidín",
-      img: "images/Jamon y tomate.png",
-      ingredients: ["Ingrediente 1", "Ingrediente 2"],
+      img: "images/Aguacate y queso cottage.png",
+      ingredients: ["Aguacate", "Queso cottage", "Pimienta (en abundancia)"],
     },
     {
       name: "Hoy me siento pepino",
-      img: "",
+      img: "images/Hoy me siento pepino.png",
       ingredients: [
-        "Ingrediente 1",
-        "Ingrediente 2",
-        "Ingrediente 3",
-        "Ingrediente 4",
+        "Pepino en rodajas",
+        "Queso cottage",
+        "Aceite",
+        "Limón",
+        "Sal", 
+        "Pimienta"
       ],
     },
     // Añade más tostadas aquí
