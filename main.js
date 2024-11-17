@@ -156,19 +156,28 @@ const menuData = {
     {
       name: "La cardiólogo",
       img: "ruta/a/la_cardiologo.jpg",
-      ingredients: ["Ingrediente 1", "Ingrediente 2", "Ingrediente 3"],
+      ingredients: [
+        "Aguacate", 
+        "Queso feta"
+      ], 
     },
     {
       name: "La bombastic",
       img: "ruta/a/la_bombastic.jpg",
-      ingredients: ["Ingrediente A", "Ingrediente B", "Ingrediente C"],
+      ingredients: [
+        "Pisto", 
+        "Atún"
+      ],
     },
     {
       name: "La científica loca",
       img: "ruta/a/la_cientifica_loca.jpg",
-      ingredients: ["Ingrediente X", "Ingrediente Y"],
+      ingredients: [
+        "Hummus", 
+        "Pimiento de piquillo", 
+        "Queso feta"
+      ],
     },
-    // Añade más tostadas aquí
   ],
 };
 
