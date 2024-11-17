@@ -155,7 +155,7 @@ const menuData = {
   Olvidadas: [
     {
       name: "La cardiólogo",
-      img: "ruta/a/la_cardiologo.jpg",
+      img: "images/La cardiólogo.png",
       ingredients: [
         "Aguacate", 
         "Queso feta"
@@ -163,7 +163,7 @@ const menuData = {
     },
     {
       name: "La bombastic",
-      img: "ruta/a/la_bombastic.jpg",
+      img: "images/La bombastic.png",
       ingredients: [
         "Pisto", 
         "Atún"
@@ -171,7 +171,7 @@ const menuData = {
     },
     {
       name: "La científica loca",
-      img: "ruta/a/la_cientifica_loca.jpg",
+      img: "images/La científica loca.png",
       ingredients: [
         "Hummus", 
         "Pimiento de piquillo", 
@@ -180,6 +180,22 @@ const menuData = {
     },
   ],
 };
+
+const customIngredients = [
+  "Pan",
+  "Jamón serrano",
+  "Tomate",
+  "Aguacate",
+  "Pepino",
+  "Jamón cocido",
+  "Salmón ahumado",
+  "Queso curado",
+  "Huevo revuelto",
+  "Pimiento",
+  "Atún",
+  "Alcaparras",
+];
+
 
 let lastCategory = "";
 let isShown = false;
@@ -244,3 +260,47 @@ function showCategory(category) {
   lastCategory = category;
   isShown = true;
 }
+
+function showIngredientsCarousel() {
+  const carousel = document.getElementById("ingredients-carousel");
+
+  // Vaciar el carrusel si ya tiene contenido
+  carousel.innerHTML = "";
+
+  customIngredients.forEach((ingredient) => {
+    const ingredientDiv = document.createElement("div");
+    ingredientDiv.classList.add("ingredient-item");
+
+    ingredientDiv.innerHTML = `
+      <img src="images/ingredients/${ingredient}.png" alt="${ingredient}">
+      <p>${ingredient}</p>
+    `;
+    carousel.appendChild(ingredientDiv);
+  });
+}
+
+function startCarousel() {
+  const carousel = document.getElementById("ingredients-carousel");
+  
+  let scrollAmount = 0;
+  let scrollDirection = 1; // 1 para avanzar, -1 para retroceder
+  const scrollSpeed = 1; // Velocidad del desplazamiento
+  const scrollInterval = 20; // Intervalo en milisegundos
+
+  setInterval(() => {
+    // Actualiza el desplazamiento
+    scrollAmount += scrollSpeed * scrollDirection;
+    carousel.scrollLeft = scrollAmount;
+
+    // Verifica si llegó al final o al inicio
+    if (carousel.scrollLeft >= carousel.scrollWidth - carousel.offsetWidth) {
+      scrollDirection = -1; // Cambia de dirección al llegar al final
+    } else if (carousel.scrollLeft <= 0) {
+      scrollDirection = 1; // Cambia de dirección al llegar al inicio
+    }
+  }, scrollInterval);
+}
+
+// Llamar a las funciones al cargar la página
+showIngredientsCarousel();
+startCarousel();

@@ -67,13 +67,39 @@ body {
 .tostada img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
   max-width: 350px;
 }
 
-/* ul {
-  padding-left: 40%;
-} */
+.carousel-container {
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  white-space: nowrap; /* Mantener elementos en una fila */
+  padding: 10px;
+  margin: 20px auto;
+  width: 80%; /* Ajusta el tamaño del contenedor */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  scrollbar-width: none; 
+}
+
+.ingredient-item {
+  display: inline-block; /* Garantiza que los elementos estén en línea */
+  text-align: center;
+  margin: 0 0.5em;
+}
+
+.ingredient-item img {
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ingredient-item p {
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 5px;
+}
 
 
 footer {
