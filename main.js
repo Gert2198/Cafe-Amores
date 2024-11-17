@@ -194,6 +194,7 @@ const customIngredients = [
   "Pimiento",
   "Atún",
   "Alcaparras",
+  "Pisto",
 ];
 
 
@@ -245,7 +246,7 @@ function showCategory(category) {
 
     tostadaDiv.innerHTML = `
       <img src="${item.img}" alt="${item.name}">
-      <h4>${item.name}</h4>
+      <p>${item.name}</p>
       <details>
         <summary>Ingredientes</summary>
         <ul>${ingredientsList}</ul>
